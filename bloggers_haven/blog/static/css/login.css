@@ -4,29 +4,103 @@ body {
     text-align: center;
 }
 
-.container {
-    width:30;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    margin-top: 50px;
+.gb {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sehoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
-input,button {
+.login_cont {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5ps 15px rgba(0,0,0,0.2);
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.login-cont h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.input {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.ig label {
     display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.ig input {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-button {
-    background: red;
-    color: white;
+.btn {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 0.7rem;
+    width: 100%;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-a {
-    color: darkred;
+.btn-login:hover {
+    background-color: #d81b60;
+
 }
+
+.login {
+    margin-top: 1.5rem;
+}
+
+.login p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+.login-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.login-button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.fb {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #dd4b39;
+}
+
+.signuplink {
+    margin-top: 1rem;
+    color: #666;
+}
+
+.signuplink a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: 600;
+}
+

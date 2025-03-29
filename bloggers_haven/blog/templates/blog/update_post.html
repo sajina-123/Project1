@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Blog Post</title>
+</head>
+<body>
+    <h1>Update Post</h1>
+    <form method="POST" >
+        {% csrf_token %}
+        <input type="text" name="title" value="{{post.title}}" required> <br>
+        <trxtarea name="content" required> {{ post.content }}</textarea><br>
+            <button type="submit">Update Post </button>
+    </form>
+</body>
+</html>
+

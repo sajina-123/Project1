@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    #'reset_framework',
+   
 ]
 
 MIDDLEWARE = [
@@ -130,4 +130,4 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'blog/static')
 ]
 
-LOGIN_URL ='/login/'
+LOGIN_URL ='/login/' 

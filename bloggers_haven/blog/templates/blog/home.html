@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% comment %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,4 +14,50 @@
     </div>
     <script src="{% static 'js/home.js' %}"></script>
 </body>
+</html> {% endcomment %} -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Blogger's Haven</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Blogger's Haven</a>
+            <ul class="nav-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Blogs</a></li>
+                <li><a href="#">Create blog</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="wel-section">
+        <div class="container">
+            <h1>Welcome to Blogger's Haven</h1>
+            <p>your one step platform to share your thoughts with the world.</p>
+        </div>
+    </section>
+    <section class="blog-list">
+        <div class="container">
+            <h2>Recent Blogs</h2>
+            <div class="blog">
+                <div class="blog-podt">
+                    <h3>blog Title</h3>
+                    <p>short description of the blog.......</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'js/home.js' %}"></script>
+    
+</body>
 </html>
+

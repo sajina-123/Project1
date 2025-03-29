@@ -8,7 +8,7 @@
     <link rel="stylesheet"  href="{% static 'css/login.css' %}">
 </head>
 <body>
-    <div class="container">
+    {% comment %} <div class="container">
         <h1>Login</h1>
         <form action=" "  method="POST">
             {% csrf_token %}
@@ -17,7 +17,39 @@
             <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <a href="{% url 'signup' %}">Signup</a></p>
+    </div> {% endcomment %}
+    <div class="gb">
+        <div class="login-cont">
+            <h1>Login</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="ig">
+                    <label for="username" >Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required/>
+                </div>
+
+                <div class="ig">
+                    <label for="password" >Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+                </div>
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login">
+                    <p>Or login with</p>
+                    <div class="login-btn">
+                        <a href="#" class="fb">Facebook</a>
+                        <a href="#" class="google">Google</a>
+                    </div>
+                </div>
+
+                <p class="signuplink">
+                    Don't have an account?<a href="{% url 'signup' %}">Sign up now</a>
+                </p>
+            </form>
+        </div>
     </div>
-    <script src="{% static 'js/login.js' %}"></script>
+
+
+                <script src="{% static 'js/login.js' %}"></script>
 </body>
 </html>

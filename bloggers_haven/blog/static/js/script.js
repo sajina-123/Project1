@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let form=document.querySelector("form");
+    let form=document.querySelector("input");
     form.addEventListener("submit", function(event) {
         let username=document.querySelector("input[name='username']").value;
         let password=document.querySelector("input[name='password']").value;
@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
